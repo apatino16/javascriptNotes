@@ -2,28 +2,28 @@
 Notes on JavaScript fundamentals needed for front-end or back-end development.
 
 ## Table of Content
-- Introduction to Javascript Syntax
-- Javascript Syntax: Conditionals
-- Javascript Syntax: Functions
-- Javascript Syntax: Scope
-- Javascript Syntax: Arrays
-- Javascript Syntax: Loops
-- Javascript Syntax: Objects
-- Javascript Syntax: Iterators
-- Javascript Syntax: Errors and Debugging
+- [Introduction to JavaScript Syntax](/introJsSyntax.md)
+- JavaScript Syntax: Conditionals
+- JavaScript Syntax: Functions
+- JavaScript Syntax: Scope
+- JavaScript Syntax: Arrays
+- JavaScript Syntax: Loops
+- JavaScript Syntax: Objects
+- JavaScript Syntax: Iterators
+- JavaScript Syntax: Errors and Debugging
 
-- Javascript and the DOM
-- DOM events with Javascript
+- JavaScript and the DOM
+- DOM events with JavaScript
 
-- Javascript Syntax: Classes
-- Javascript Syntax: Modules
-- Javascript Syntax: Error Handling
+- JavaScript Syntax: Classes
+- JavaScript Syntax: Modules
+- JavaScript Syntax: Error Handling
 
-- Javascript Testing
+- JavaScript Testing
 
-- Async Javascript and HTTP Requests
-- Basics of Asynchronous Javascript
+- Async JavaScript and HTTP Requests
+- Basics of Asynchronous JavaScript
 
-- Javascript Syntax: Promises
-- Javascript Syntax: Async-Await
-- Javascript Syntax: Requests
+- JavaScript Syntax: Promises
+- JavaScript Syntax: Async-Await
+- JavaScript Syntax: Requests
