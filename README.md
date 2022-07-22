@@ -6,7 +6,7 @@ Notes on JavaScript fundamentals needed for front-end or back-end development.
 - [JavaScript Syntax: Conditionals](/jsConditionals.md)
 - [JavaScript Syntax: Functions](/jsFunctions.md)
 - [JavaScript Syntax: Scope](/jsScope.md)
-- JavaScript Syntax: Arrays
+- [JavaScript Syntax: Arrays](/jsArrays.md)
 - JavaScript Syntax: Loops
 - JavaScript Syntax: Objects
 - JavaScript Syntax: Iterators
