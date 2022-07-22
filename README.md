@@ -5,7 +5,7 @@ Notes on JavaScript fundamentals needed for front-end or back-end development.
 - [Introduction to JavaScript Syntax](/introJsSyntax.md)
 - [JavaScript Syntax: Conditionals](/jsConditionals.md)
 - [JavaScript Syntax: Functions](/jsFunctions.md)
-- JavaScript Syntax: Scope
+- [JavaScript Syntax: Scope](/jsScope.md)
 - JavaScript Syntax: Arrays
 - JavaScript Syntax: Loops
 - JavaScript Syntax: Objects
