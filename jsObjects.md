@@ -102,13 +102,32 @@ for (let variableName in outerObject.innerObject) {
 
 ### JavaScript Arrow Function this Scope
 - JavaScript arrow functions do not have their own this context, but use the this of the surrounding lexical context. Thus, they are generally a poor choice for writing object methods.
+> Note: avoid using arrow functions when using this in a method!
+
+## Privacy
+- Accessing and updating properties is fundamental in working with objects. However, there are cases in which we don’t want other code simply accessing and updating an object’s properties. When discussing privacy in objects, we define it as the idea that **only certain properties should be mutable or able to change in value**.
+- One common convention is to place an underscore `_` before the name of a property to mean that the property should not be altered. 
 
 ### getters and setters intercept property access
 - JavaScript getter and setter methods are helpful in part because they offer a way to intercept property access and assignment, and allow for additional actions to be performed before these changes go into effect.
-javascript factory functions
-- A JavaScript function that returns an object is known as a factory function. Factory functions often accept parameters in order to customize the returned object.
 
-### javascript getters and setters restricted
+####Getters
+- **Getters ** are methods that get and return the internal properties of an object. 
+- Getters can perform an action on the data when getting a property.
+- Getters can return different values using conditionals.
+- In a getter, we can access the properties of the calling object using this.
+- The functionality of our code is easier for other developers to understand.
+> Note: Another thing to keep in mind when using getter (and setter) methods is that properties cannot share the same name as the getter/setter function. If we do so, then calling the method will result in an infinite call stack error. 
+> To call a getter method, it looks syntactically like accessing a property. You do not need to include a set of parentheses.
+
+#### Setters
+- setter methods reassign values of existing properties within an object. 
+> Note: All setters need at least one parameter
+
+### JavaScript factory functions
+- A JavaScript **function that returns an object** is known as a factory function. Factory functions often accept parameters in order to customize the returned object.
+
+### JavaScript getters and setters restricted
 - JavaScript object properties are not private or protected. Since JavaScript objects are passed by reference, there is no way to fully prevent incorrect interactions with object properties.
 - One way to implement more restricted interactions with object properties is to use getter and setter methods.
 - Typically, the internal value is stored as a property with an identifier that matches the getter and setter method names, but begins with an underscore (_).
