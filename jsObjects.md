@@ -86,14 +86,7 @@ for (let variableName in outerObject.innerObject) {
 };
 ```
 
-### JavaScript destructuring assignment shorthand syntax
-- The JavaScript destructuring assignment is a shorthand syntax that allows object properties to be extracted into specific variable values.
-- It uses a pair of curly braces ({}) with property names on the left-hand side of an assignment to extract values from objects. The number of variables can be less than the total properties of an object.
-
-### shorthand property name syntax for object creation
-- The shorthand property name syntax in JavaScript allows creating objects without explicitly specifying the property names (ie. explicitly declaring the value after the key). In this process, an object is created where the property names of that object match variables which already exist in that context. Shorthand property names populate an object with a key matching the identifier and a value matching the identifier’s value.
-
-
+## `This`
 ### `this` Keyword
 - The reserved keyword `this` refers to a method’s calling object, and it can be used to access properties belonging to that object.
 
@@ -105,13 +98,16 @@ for (let variableName in outerObject.innerObject) {
 > Note: avoid using arrow functions when using this in a method!
 
 ## Privacy
+### JavaScript getters and setters restricted
 - Accessing and updating properties is fundamental in working with objects. However, there are cases in which we don’t want other code simply accessing and updating an object’s properties. When discussing privacy in objects, we define it as the idea that **only certain properties should be mutable or able to change in value**.
-- One common convention is to place an underscore `_` before the name of a property to mean that the property should not be altered. 
+- JavaScript object properties are not private or protected. Since JavaScript objects are passed by reference, there is no way to fully prevent incorrect interactions with object properties.
+- One way to implement more restricted interactions with object properties is to use getter and setter methods.
+- One common convention is to place an underscore `_` before the name of a property to mean that the property should not be altered. Typically, the internal value is stored as a property with an identifier that matches the getter and setter method names, but begins with an underscore (_).
 
 ### getters and setters intercept property access
 - JavaScript getter and setter methods are helpful in part because they offer a way to intercept property access and assignment, and allow for additional actions to be performed before these changes go into effect.
 
-####Getters
+#### Getters
 - **Getters ** are methods that get and return the internal properties of an object. 
 - Getters can perform an action on the data when getting a property.
 - Getters can return different values using conditionals.
@@ -125,9 +121,35 @@ for (let variableName in outerObject.innerObject) {
 > Note: All setters need at least one parameter
 
 ### JavaScript factory functions
-- A JavaScript **function that returns an object** is known as a factory function. Factory functions often accept parameters in order to customize the returned object.
+- A JavaScript **function that returns an object** is known as a factory function. Factory functions often accept parameters in order to customize the returned object. It can be reused to make multiple object instances.
 
-### JavaScript getters and setters restricted
-- JavaScript object properties are not private or protected. Since JavaScript objects are passed by reference, there is no way to fully prevent incorrect interactions with object properties.
-- One way to implement more restricted interactions with object properties is to use getter and setter methods.
-- Typically, the internal value is stored as a property with an identifier that matches the getter and setter method names, but begins with an underscore (_).
+### shorthand property name syntax for object creation
+- Property Value Shorthand
+- The shorthand property name syntax in JavaScript allows creating objects without explicitly specifying the property names (ie. explicitly declaring the value after the key). In this process, an object is created where the property names of that object match variables which already exist in that context. Shorthand property names populate an object with a key matching the identifier and a value matching the identifier’s value.
+- There are a few instances where the property’s key and value share the same name, you can remove the key : portion to destructure the object.
+
+### JavaScript destructuring assignment shorthand syntax
+- Destructured Assignment
+- The JavaScript destructuring assignment is a shorthand syntax that allows object properties to be extracted into specific variable values.
+- It uses a pair of curly braces ({}) with property names on the left-hand side of an assignment to extract values from objects. The number of variables can be less than the total properties of an object.
+`const { propertyName } = obj;`
+
+### Built-in Object Methods
+`Object.keys( )`
+- The `Object.keys( )` returns an array whose elements are strings corresponding to the enumerable properties found directly upon object. The ordering of the properties is the same as that given by looping over the properties of the object manually.
+- Syntax `Object.keys(obj)`
+- Parameter: The object of which the enumerable's own properties are to be returned.
+- Return value: An array of strings that represent all the enumerable properties of the given object.
+
+'Object.entries( )`
+- `Object.entries( )` returns an **array** whose elements are arrays corresponding to the **enumerable string-keyed property [key, value] pairs** found directly upon object. The ordering of the properties is the same as that given by looping over the property values of the object manually.
+- Syntax: `Object.entries(obj)`
+- Parameter: The object whose own enumerable string-keyed property [key, value] pairs are to be returned.
+- Return Value: An array of the given object's own enumerable string-keyed property [key, value] pairs.
+
+'Object.assign( )`
+-
+- Syntax:
+- Parameter:
+- Return Value: 
+
