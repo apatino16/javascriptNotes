@@ -1,15 +1,17 @@
 # Objects
 ### Objects
-- An object is a **built-in data type for storing key-value pairs**. Data inside objects are unordered, and the values can be of any type.
+- An object is a **built-in data type for storing key-value pairs**. 
+- Data inside objects are **unordered**, and the values can be of **any type**.
 
 ### Properties and values of a JavaScript object
-- A JavaScript object literal is enclosed with curly braces `{ }`. Values are mapped to keys in the object with a colon `:`, and the key-value pairs are separated by commas. All the keys are unique, but values are not.
-- Key-value pairs of an object are also referred to as **properties**.
+- **Properties** are the object's key-value pairs. 
+- A JavaScript **object literal** is enclosed with curly braces `{ }`. Values are mapped to keys in the object with a colon `:`, and the key-value pairs are separated by commas. All the keys are unique, but values are not.
 
-### Creating Object Literals:
+#### Creating Object Literals:
 - Use curly braces, `{ }`, to designate an object literal
 - Fill an object with unordered data. This data is organized into key-value pairs
 - write the key’s name, or identifier, followed by a colon and then the value. We separate each key-value pair in an object literal with a comma `,`.
+
 ```
 let objectName = {
   'Property Name': 'Property Value',
@@ -47,7 +49,7 @@ let objectName = {
 - Once an object is created in JavaScript, it is possible to remove properties from the object using the delete operator. The delete keyword **deletes both the value of the property and the property itself from the object**. The delete operator only works on properties, not on variables or functions
 
 ### JavaScript Object Methods
-- JavaScript objects may have **property values that are functions**. These are referred to as** object methods**.
+- A **method** is a property with a fuctions as it's value. 
 - Methods may be defined using anonymous arrow function expressions, or with shorthand method syntax.
 - Object methods are invoked with the syntax: 
 `objectName.methodName(arguments)`
@@ -126,8 +128,10 @@ for (let variableName in outerObject.innerObject) {
 - setter methods reassign values of existing properties within an object. 
 > Note: All setters need at least one parameter
 
-### JavaScript factory functions
-- A JavaScript **function that returns an object** is known as a factory function. Factory functions often accept parameters in order to customize the returned object. It can be reused to make multiple object instances.
+### JavaScript Factory Functions
+- A factory function is a JavaScript **function that returns an object**. 
+- A factory functions often accept parameters in order to customize the returned object.
+- A factory function can be reused to make multiple object instances.
 
 ### Object Destructuring
 - There are different ways to use object destructuring: one way is the property value shorthand and another is destructured assignment.
@@ -144,11 +148,31 @@ for (let variableName in outerObject.innerObject) {
 `const { propertyName } = obj;`
 
 ### Built-in Object Methods
-`Object.keys( )`
-- The `Object.keys( )` returns an array whose elements are strings corresponding to the enumerable properties found directly upon object. The ordering of the properties is the same as that given by looping over the properties of the object manually.
-- Syntax `Object.keys(obj)`
-- Parameter: The object of which the enumerable's own properties are to be returned.
-- Return value: An array of strings that represent all the enumerable properties of the given object.
+`Object.assign( )`
+- The `Object.assign( )` method only copies enumerable and own properties from a source object to a target object. It uses `[[Get]]` on the source and `[[Set]]` on the target, so it will invoke getters and setters. Therefore it assigns properties, versus copying or defining new properties. This may make it unsuitable for merging new properties into a prototype if the merge sources contain getters.
+- Properties in the target object are overwritten by properties in the sources if they have the same key. Later sources' properties overwrite earlier ones.
+- Syntax: `Object.assign(target, ...sources)`
+- Parameter: The **target** object — what to apply the sources' properties to, which is returned after it is modified. The **source** object(s) — objects containing the properties you want to apply.
+- Return Value: The target object.
+> Note: `Object.assign( )` does not throw on null or undefined sources.
+
+'Object.create( )`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.defineProperties()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.defineProperty()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
 
 `Object.entries( )`
 - `Object.entries( )` returns an **array** whose elements are arrays corresponding to the **enumerable string-keyed property [key, value] pairs** found directly upon object. The ordering of the properties is the same as that given by looping over the property values of the object manually.
@@ -156,11 +180,147 @@ for (let variableName in outerObject.innerObject) {
 - Parameter: The object whose own enumerable string-keyed property [key, value] pairs are to be returned.
 - Return Value: An array of the given object's own enumerable string-keyed property [key, value] pairs.
 
-`Object.assign( )`
-- The `Object.assign()` method only copies enumerable and own properties from a source object to a target object. It uses `[[Get]]` on the source and `[[Set]]` on the target, so it will invoke getters and setters. Therefore it assigns properties, versus copying or defining new properties. This may make it unsuitable for merging new properties into a prototype if the merge sources contain getters.
-- Properties in the target object are overwritten by properties in the sources if they have the same key. Later sources' properties overwrite earlier ones.
-- Syntax: `Object.assign(target, ...sources)`
-- Parameter: The **target** object — what to apply the sources' properties to, which is returned after it is modified. The **source** object(s) — objects containing the properties you want to apply.
-- Return Value: The target object.
-> Note: Object.assign() does not throw on null or undefined sources.
+`Object.freeze()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.fromEntries()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.getOwnPropertyDescriptor()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.getOwnPropertyDescriptors()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.getOwnPropertyNames()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.getOwnPropertySymbols()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.getPrototypeOf()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.prototype.hasOwnProperty()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.is()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.isExtensible()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.isFrozen()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.prototype.isPrototypeOf()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.isSealed()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.keys( )`
+- The `Object.keys( )` returns an array whose elements are strings corresponding to the enumerable properties found directly upon object. The ordering of the properties is the same as that given by looping over the properties of the object manually.
+- Syntax `Object.keys(obj)`
+- Parameter: The object of which the enumerable's own properties are to be returned.
+- Return value: An array of strings that represent all the enumerable properties of the given object.
+
+`Object.preventExtensions()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.prototype.propertyIsEnumerable()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.seal()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.setPrototypeOf()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.prototype.toLocaleString()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.prototype.toString()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.prototype.valueOf()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+`Object.values()`
+- 
+- Syntax:
+- Parameter:
+- Return Value:
+
+
+
+
+
+
+
+
+
+
+
+
 
