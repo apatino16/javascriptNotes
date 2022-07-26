@@ -149,6 +149,7 @@ for (let variableName in outerObject.innerObject) {
 
 ### Built-in Object Methods
 `Object.assign( )`
+-
 - The `Object.assign( )` method only copies enumerable and own properties from a source object to a target object. It uses `[[Get]]` on the source and `[[Set]]` on the target, so it will invoke getters and setters. Therefore it assigns properties, versus copying or defining new properties. This may make it unsuitable for merging new properties into a prototype if the merge sources contain getters.
 - Properties in the target object are overwritten by properties in the sources if they have the same key. Later sources' properties overwrite earlier ones.
 - Syntax: `Object.assign(target, ...sources)`
@@ -156,7 +157,7 @@ for (let variableName in outerObject.innerObject) {
 - Return Value: The target object.
 > Note: `Object.assign( )` does not throw on null or undefined sources.
 
-'Object.create( )`
+`Object.create( )`
 - 
 - Syntax:
 - Parameter:
@@ -175,6 +176,7 @@ for (let variableName in outerObject.innerObject) {
 - Return Value:
 
 `Object.entries( )`
+- 
 - `Object.entries( )` returns an **array** whose elements are arrays corresponding to the **enumerable string-keyed property [key, value] pairs** found directly upon object. The ordering of the properties is the same as that given by looping over the property values of the object manually.
 - Syntax: `Object.entries(obj)`
 - Parameter: The object whose own enumerable string-keyed property [key, value] pairs are to be returned.
@@ -259,6 +261,7 @@ for (let variableName in outerObject.innerObject) {
 - Return Value:
 
 `Object.keys( )`
+- 
 - The `Object.keys( )` returns an array whose elements are strings corresponding to the enumerable properties found directly upon object. The ordering of the properties is the same as that given by looping over the properties of the object manually.
 - Syntax `Object.keys(obj)`
 - Parameter: The object of which the enumerable's own properties are to be returned.
