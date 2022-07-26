@@ -89,3 +89,7 @@ const team = {
 // Adding a new team member
 team.addPlayer('Oscar', 'Salazar', 45);
 console.log(team.players);
+
+//Recording a new game 
+team.addGame('Chu Mu-Yen', 1, 5);
+console.log(team.games);
