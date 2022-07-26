@@ -111,6 +111,7 @@ for (let variableName in outerObject.innerObject) {
 - JavaScript object properties are not private or protected. Since JavaScript objects are passed by reference, there is no way to fully prevent incorrect interactions with object properties.
 - One way to implement more restricted interactions with object properties is to use getter and setter methods.
 - One common convention is to place an underscore `_` before the name of a property to mean that the property should not be altered. Typically, the internal value is stored as a property with an identifier that matches the getter and setter method names, but begins with an underscore (_).
+`_property: value`
 
 ### getters and setters intercept property access
 - JavaScript getter and setter methods are helpful in part because they offer a way to intercept property access and assignment, and allow for additional actions to be performed before these changes go into effect.
