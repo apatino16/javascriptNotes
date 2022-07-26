@@ -71,3 +71,6 @@ const team = {
   },
 };
 
+// Adding a new team member
+team.addPlayer('Oscar', 'Salazar', 45);
+console.log(team.players);
