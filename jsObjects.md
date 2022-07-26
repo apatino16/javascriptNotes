@@ -128,6 +128,13 @@ for (let variableName in outerObject.innerObject) {
 #### Setters
 - setter methods reassign values of existing properties within an object. 
 > Note: All setters need at least one parameter
+- Syntactically, a setter is created using the `set` keyword, followed by a function declaration.
+
+```
+set functionName() {
+ 
+}
+```
 
 ### JavaScript Factory Functions
 - A factory function is a JavaScript **function that returns an object**. 
