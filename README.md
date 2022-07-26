@@ -9,6 +9,8 @@ Notes on JavaScript fundamentals needed for front-end or back-end development.
 - [JavaScript Syntax: Arrays](/jsArrays.md)
 - [JavaScript Syntax: Loops](/jsLoops.md)
 - [JavaScript Syntax: Objects](/jsObjects.md)
+  * [JavaScript Project: Meal Maker](/mealMaker.js)
+  * [JavaScript Project: Team Stats](teamStats.js)
 - JavaScript Syntax: Iterators
 - JavaScript Syntax: Errors and Debugging
 
