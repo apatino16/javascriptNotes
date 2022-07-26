@@ -55,6 +55,9 @@ menu.meal = 'Tacos de Asada';
 menu.price = 3;
 // console.log(menu);
 
+//Today's Special
+console.log(menu.todaysSpecial);
+
 
 
 
