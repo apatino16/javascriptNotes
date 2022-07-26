@@ -15,7 +15,16 @@ const menu = {
   _meal: '',
   _price: 0,
   
-  set meal(mealToCheck){ }
+  //Add Setter Methods
+  //Setter will type check the values being assigned 
+
+  // Create a meal setter method with mealToCheck as a parameter
+  set meal(mealToCheck){ 
+    //create an if statement that checks if mealToCheck is a string
+    if (typeof mealToCheck === 'string') {
+      // If it is, return the object’s _meal property with mealToCheck assigned as the value
+      return this._meal = mealToCheck;
+  }
 };
 
 
