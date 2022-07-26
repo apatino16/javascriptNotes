@@ -88,18 +88,24 @@ for (let variableName in outerObject.innerObject) {
 
 ## `This`
 ### `this` Keyword
+- The object that a method belongs to is called **the calling object**.
 - The reserved keyword `this` refers to a method’s calling object, and it can be used to access properties belonging to that object.
+- Methods do not automatically have access to other internal properties of the calling object.
+- The value of `this` depends on where the`this` is being accessed from.
+
 
 ### javascript function this
 - Every JavaScript function or method has a this context. For a function defined inside of an object, this will refer to that object itself. For a function defined outside of an object, this will refer to the global object (window in a browser, global in Node.js).
 
 ### JavaScript Arrow Function this Scope
-- JavaScript arrow functions do not have their own this context, but use the this of the surrounding lexical context. Thus, they are generally a poor choice for writing object methods.
+- JavaScript arrow functions do not have their own `this` context, but use the `this` of the surrounding lexical context. Thus, they are generally a poor choice for writing object methods.
+- We cannot use arrow functions as methods if we want to access other internal properties.
 > Note: avoid using arrow functions when using this in a method!
 
 ## Privacy
 ### JavaScript getters and setters restricted
-- Accessing and updating properties is fundamental in working with objects. However, there are cases in which we don’t want other code simply accessing and updating an object’s properties. When discussing privacy in objects, we define it as the idea that **only certain properties should be mutable or able to change in value**.
+- Accessing and updating properties is fundamental in working with objects. However, there are cases in which we don’t want other code simply accessing and updating an object’s properties. Privacy in objects, is the idea that **only certain properties should be mutable or able to change in value**.
+- JavaScript objects do not have built-in privacy, rather there are conventions to follow to notify other developers about the intent of the code.
 - JavaScript object properties are not private or protected. Since JavaScript objects are passed by reference, there is no way to fully prevent incorrect interactions with object properties.
 - One way to implement more restricted interactions with object properties is to use getter and setter methods.
 - One common convention is to place an underscore `_` before the name of a property to mean that the property should not be altered. Typically, the internal value is stored as a property with an identifier that matches the getter and setter method names, but begins with an underscore (_).
@@ -123,13 +129,16 @@ for (let variableName in outerObject.innerObject) {
 ### JavaScript factory functions
 - A JavaScript **function that returns an object** is known as a factory function. Factory functions often accept parameters in order to customize the returned object. It can be reused to make multiple object instances.
 
-### shorthand property name syntax for object creation
-- Property Value Shorthand
+### Object Destructuring
+- There are different ways to use object destructuring: one way is the property value shorthand and another is destructured assignment.
+
+#### shorthand property name syntax for object creation
+##### Property Value Shorthand
 - The shorthand property name syntax in JavaScript allows creating objects without explicitly specifying the property names (ie. explicitly declaring the value after the key). In this process, an object is created where the property names of that object match variables which already exist in that context. Shorthand property names populate an object with a key matching the identifier and a value matching the identifier’s value.
 - There are a few instances where the property’s key and value share the same name, you can remove the key : portion to destructure the object.
 
-### JavaScript destructuring assignment shorthand syntax
-- Destructured Assignment
+#### JavaScript destructuring assignment shorthand syntax
+##### Destructured Assignment
 - The JavaScript destructuring assignment is a shorthand syntax that allows object properties to be extracted into specific variable values.
 - It uses a pair of curly braces ({}) with property names on the left-hand side of an assignment to extract values from objects. The number of variables can be less than the total properties of an object.
 `const { propertyName } = obj;`
@@ -141,15 +150,17 @@ for (let variableName in outerObject.innerObject) {
 - Parameter: The object of which the enumerable's own properties are to be returned.
 - Return value: An array of strings that represent all the enumerable properties of the given object.
 
-'Object.entries( )`
+`Object.entries( )`
 - `Object.entries( )` returns an **array** whose elements are arrays corresponding to the **enumerable string-keyed property [key, value] pairs** found directly upon object. The ordering of the properties is the same as that given by looping over the property values of the object manually.
 - Syntax: `Object.entries(obj)`
 - Parameter: The object whose own enumerable string-keyed property [key, value] pairs are to be returned.
 - Return Value: An array of the given object's own enumerable string-keyed property [key, value] pairs.
 
-'Object.assign( )`
--
-- Syntax:
-- Parameter:
-- Return Value: 
+`Object.assign( )`
+- The `Object.assign()` method only copies enumerable and own properties from a source object to a target object. It uses `[[Get]]` on the source and `[[Set]]` on the target, so it will invoke getters and setters. Therefore it assigns properties, versus copying or defining new properties. This may make it unsuitable for merging new properties into a prototype if the merge sources contain getters.
+- Properties in the target object are overwritten by properties in the sources if they have the same key. Later sources' properties overwrite earlier ones.
+- Syntax: `Object.assign(target, ...sources)`
+- Parameter: The **target** object — what to apply the sources' properties to, which is returned after it is modified. The **source** object(s) — objects containing the properties you want to apply.
+- Return Value: The target object.
+> Note: Object.assign() does not throw on null or undefined sources.
 
