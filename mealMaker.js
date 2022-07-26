@@ -12,5 +12,6 @@
 //Create a Menu Object
 
 const menu = { 
-  _meal: ''
+  _meal: '',
+  _price: 0,
 };
