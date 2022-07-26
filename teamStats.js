@@ -29,6 +29,23 @@ const team = {
       age: 19,
     },
   ],
-  _games: [ ],
+  _games: [ 
+    // Populate the array with game objects that have 3 properties
+    MenBeijingOlympics2008 = {
+      opponent: 'Gabriel Mercedes', 
+      teamPoints: 1,
+      opponentPoints: 1,
+    },
+    WomenBeijingOlympics2008 = {
+      opponent: 'Nina Solheim', 
+      teamPoints: 3,
+      opponentPoints: 1,
+    },
+    MenSummerParalympics2020 = {
+      opponent: 'Mahdi Pourrahnama', 
+      teamPoints: 26,
+      opponentPoints: 20,
+    },
+  ],
 };
 
