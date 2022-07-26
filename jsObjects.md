@@ -104,7 +104,11 @@ for (let variableName in outerObject.innerObject) {
 - We cannot use arrow functions as methods if we want to access other internal properties.
 > Note: avoid using arrow functions when using this in a method!
 
-## Privacy
+## Accessor Property
+In JavaScript, accessor properties are **methods that get or set the value of an object**. For that, we use these two keywords:
+- `get` - to define a getter method to get the property value
+- `set` - to define a setter method to set the property value
+
 ### JavaScript getters and setters restricted
 - Accessing and updating properties is fundamental in working with objects. However, there are cases in which we don’t want other code simply accessing and updating an object’s properties. Privacy in objects, is the idea that **only certain properties should be mutable or able to change in value**.
 - JavaScript objects do not have built-in privacy, rather there are conventions to follow to notify other developers about the intent of the code.
