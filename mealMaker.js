@@ -24,7 +24,18 @@ const menu = {
     if (typeof mealToCheck === 'string') {
       // If it is, return the object’s _meal property with mealToCheck assigned as the value
       return this._meal = mealToCheck;
-  }
+    }
+  },
+  
+  //Create a price setter method with priceToCheck as a paramenter  
+    set price(priceToCheck){
+      If (typeof priceToCheck === 'number') {
+        return this._price = priceToCheck;
+    }
+  },
+  
+  
+    
 };
 
 
