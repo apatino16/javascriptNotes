@@ -56,5 +56,18 @@ const team = {
   get games(){
     return this._games
   },
+  
+  // Adding Data
+  // Add a .addPlayer() method to the team object that takes in three parameters: newFirstName, newLastName, and newAge
+  addPlayer(newFirstName, newLastName, newAge){
+    // Create a player object by setting the three parameters to be the values for the object’s three properties: firstName, lastName, age
+    player = {
+      firstName: newFirstName,
+      lastName: newLastName,
+      age: newAge,
+    }
+    // Add the player object to the team‘s _players array
+    return this.players.push(player);
+  },
 };
 
