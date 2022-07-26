@@ -9,5 +9,9 @@
 
 //Populating Data
 // Create a data structure to store the information about my favorite sports team: Taekwondo
-const team = { };
+const team = {
+  // Add two properties to the object and initialize them to an empty array
+  _players: [ ],
+  _games: [ ],
+};
 
