@@ -20,22 +20,28 @@ const menu = {
 
   // Create a meal setter method with mealToCheck as a parameter
   set meal(mealToCheck){ 
-    //create an if statement that checks if mealToCheck is a string
+    // create an if statement that checks if mealToCheck is a string
     if (typeof mealToCheck === 'string') {
       // If it is, return the object’s _meal property with mealToCheck assigned as the value
       return this._meal = mealToCheck;
     }
   },
   
-  //Create a price setter method with priceToCheck as a paramenter  
-    set price(priceToCheck){
-      If (typeof priceToCheck === 'number') {
-        return this._price = priceToCheck;
+  // Create a price setter method with priceToCheck as a paramenter  
+  set price(priceToCheck){
+    // Create an if statement that checks if priceToCheck is a number
+    if (typeof priceToCheck === 'number') {
+      // If it is, return the object’s _price property with priceToCheck assigned as the value
+      return this._price = priceToCheck;
     }
   },
   
-  
     
 };
+
+//Setting the values of _meal and _price using the setters
+menu.meal = 'Tacos de Asada';
+menu.price = 3;
+// console.log(menu);
 
 
