@@ -36,12 +36,16 @@ const menu = {
     }
   },
   
-    
+  //Add  Getter Method
+  get todaysSpecial(){ },
+      
 };
 
 //Setting the values of _meal and _price using the setters
 menu.meal = 'Tacos de Asada';
 menu.price = 3;
 // console.log(menu);
+
+
 
 
