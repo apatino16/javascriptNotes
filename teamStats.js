@@ -52,5 +52,9 @@ const team = {
   get players(){
     return this._players;
   },
+  // Create another getter method called games to retrieve the _games property
+  get games(){
+    return this._games
+  },
 };
 
