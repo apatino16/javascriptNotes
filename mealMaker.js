@@ -11,4 +11,6 @@
 
 //Create a Menu Object
 
-const menu = { };
+const menu = { 
+  _meal: ''
+};
