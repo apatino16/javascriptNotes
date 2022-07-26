@@ -37,7 +37,16 @@ const menu = {
   },
   
   //Add  Getter Method
-  get todaysSpecial(){ },
+  get todaysSpecial(){
+    // Create an if…else statement to check if _meal and _price values exist (or are truthy values). 
+    if (this._meal && this._price){
+      // If so, return a string telling potential website visitors what Today’s Special is.
+      return "Today's Special is " + `${this._meal}` + ' for $' + `${this._price}` + '!'
+    }else{
+      // If _meal and _price values do not exist (or are falsy) return the string 'Meal or price was not set correctly!'
+      return 'Meal or price was not set correctly!
+    }
+  },
       
 };
 
