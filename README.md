@@ -3,7 +3,11 @@ Notes on JavaScript fundamentals needed for front-end or back-end development.
 
 ## Table of Content
 - [Introduction to JavaScript Syntax](/introJsSyntax.md)
+  * [JavaScript Project: Kelvin Weather](/kelvinWeather.js)
+  * [JavaScript Project: Dog Years](/dogYears.js)
 - [JavaScript Syntax: Conditionals](/jsConditionals.md)
+  * [JavaScript Project: Magic Eight Ball](/magicEightBall.js)
+  * [JavaScript Project: Race Day](/raceDay.js)
 - [JavaScript Syntax: Functions](/jsFunctions.md)
 - [JavaScript Syntax: Scope](/jsScope.md)
 - [JavaScript Syntax: Arrays](/jsArrays.md)
