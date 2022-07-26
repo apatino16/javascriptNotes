@@ -47,5 +47,10 @@ const team = {
       opponentPoints: 20,
     },
   ],
+  // Getting Data
+  // Create a getter method called players to retrieve the _players property
+  get players(){
+    return this._players;
+  },
 };
 
