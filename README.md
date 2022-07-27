@@ -10,6 +10,7 @@ Notes on JavaScript fundamentals needed for front-end or back-end development.
   * [JavaScript Project: Race Day](/raceDay.js)
 - [JavaScript Syntax: Functions](/jsFunctions.md)
   * [JavaScript Project: Rock, paper, scissors](/rockPaperScissors.js)
+  * [JavaScript Projects: Sleep Debt Calculator](/sleepDebtCalculator.js)
 - [JavaScript Syntax: Scope](/jsScope.md)
 - [JavaScript Syntax: Arrays](/jsArrays.md)
 - [JavaScript Syntax: Loops](/jsLoops.md)
