@@ -39,3 +39,9 @@ Notes on JavaScript fundamentals needed for front-end or back-end development.
 - JavaScript Syntax: Promises
 - JavaScript Syntax: Async-Await
 - JavaScript Syntax: Requests
+
+## Sources
+- Codecademy: Learn JavaScript Course 
+  - https://www.codecademy.com/learn/introduction-to-javascript
+
+
