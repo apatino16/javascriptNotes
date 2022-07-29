@@ -1,4 +1,4 @@
-# Javascript Notes
+# Javascript Notes & Projects
 Notes on JavaScript fundamentals needed for front-end or back-end development.
 
 ## Table of Content
