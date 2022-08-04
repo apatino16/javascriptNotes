@@ -50,10 +50,48 @@ console.log(smallNumbers)
 ```
 
 ### The `.filter( )' Method
+- The `.filter( )` method executes a **callback function** on each element in an array. 
+- The callback function for each of the elements must **return** either **true or false**. 
+- The **returned array is a new array** with any elements for which the callback function returns true.
+
+```
+// Example: 
+const numbers = [10, 20, 30, 40, 50];
+ 
+const filteredNums = numbers.filter(function(number){
+  if (number < 25) {
+    return true;
+  }
+});
+```
+```
+// Which can be refactored into:
+
+const filteredNums = numbers.filter(function(number){
+  return number < 25;
+ });
+```
+```
+// can also use arrow function syntax:
+
+const filteredNums = numbers.filter(number => number < 25);
+```
 
 ### The `.findIndex( )` Method
+-  Calling `.findIndex( )` on an array will return the index of the first element that evaluates to true in the callback function.
+
+```
+const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+// Find the index of the element that has the value 'elephant'
+const foundAnimal = animals.findIndex(animal => animal === 'elephant');
+
+// Return the index of the first element that starts with 's'
+const startsWithS = animals.findIndex(s => s[0] === 's');
+```
 
 ### The `.reduce( )` Method
+- 
 
 ### Iterator Documentation
 
