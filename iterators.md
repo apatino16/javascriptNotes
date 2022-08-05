@@ -107,7 +107,10 @@ const reduceExample = sampleArr.reduce(function(accumulator, currentValue) {
 const reduceExample = sampleArr.reduce((accumulator, currentValue) => {
  
 });
-```
+`
+### The `.every( )` Method``
+
+### The `.some( )` Method
 
 ### Iterator Documentation
 
