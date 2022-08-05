@@ -21,9 +21,9 @@ Notes on JavaScript fundamentals needed for front-end or back-end development.
   * JavaScript Project: [Meal Maker](/mealMaker.js)
   * JavaScript Project: [Team Stats](teamStats.js)
 - JavaScript Syntax: [Iterators](/iterators.md)
-  * JavaScript Project: [x ](/)
+  * JavaScript Project: [Grammar Checker](/grammarChecker.js)
+  
 - JavaScript Syntax: Errors and Debugging
-
 - JavaScript and the DOM
 - DOM events with JavaScript
 
@@ -43,5 +43,7 @@ Notes on JavaScript fundamentals needed for front-end or back-end development.
 ## Sources
 - Codecademy: Learn JavaScript Course 
   - https://www.codecademy.com/learn/introduction-to-javascript
+- Eloquent JavaScript: A Modern Introduction to Programming by Marjin Haverbeke 
+  - https://eloquentjavascript.net/
 
 
