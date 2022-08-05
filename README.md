@@ -45,5 +45,7 @@ Notes on JavaScript fundamentals needed for front-end or back-end development.
   - https://www.codecademy.com/learn/introduction-to-javascript
 - Eloquent JavaScript: A Modern Introduction to Programming by Marjin Haverbeke 
   - https://eloquentjavascript.net/
+- MDN 
+  - https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 
