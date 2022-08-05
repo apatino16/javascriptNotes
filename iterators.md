@@ -91,7 +91,22 @@ const startsWithS = animals.findIndex(s => s[0] === 's');
 ```
 
 ### The `.reduce( )` Method
-- 
+- The `.reduce( )` method returns a single value after iterating through the elements of an array, thereby reducing the array. 
+```
+// The syntax for a function expression looks like:
+
+const reduceExample = sampleArr.reduce(function(accumulator, currentValue) {
+ 
+});
+```
+
+```
+// The syntax for an arrow function looks like:
+
+const reduceExample = sampleArr.reduce((accumulator, currentValue) => {
+ 
+});
+```
 
 ### Iterator Documentation
 
