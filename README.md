@@ -23,7 +23,7 @@ Notes on JavaScript fundamentals needed for front-end or back-end development.
 - JavaScript Syntax: [Iterators](/iterators.md)
   * JavaScript Project: [Grammar Checker](/grammarChecker.js)
   
-- JavaScript Syntax: Errors and Debugging
+- JavaScript Syntax: [Errors and Debugging](/errorsAndDebugging.md)
 - JavaScript and the DOM
 - DOM events with JavaScript
 
