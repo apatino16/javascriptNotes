@@ -41,6 +41,6 @@
 - Creates an instance representing an error that occurs when an internal error in the JavaScript engine is thrown. E.g. "too much recursion".
 
 ## Debugging Errors
-- Use console.log() to solve silent bugs
+- When unexpected results occur, isolate the bug and try to fix it by using `console.log`
 
 
