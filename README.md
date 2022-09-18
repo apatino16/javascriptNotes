@@ -29,7 +29,7 @@ Notes on JavaScript fundamentals needed for front-end or back-end development.
 
 - JavaScript Syntax: Classes
 - JavaScript Syntax: Modules
-- JavaScript Syntax: Error Handling
+- JavaScript Syntax: [Error Handling](/errorHandling)
 
 - JavaScript Testing
 
