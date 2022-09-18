@@ -24,12 +24,12 @@ Notes on JavaScript fundamentals needed for front-end or back-end development.
   * JavaScript Project: [Grammar Checker](/grammarChecker.js)
   
 - JavaScript Syntax: [Errors and Debugging](/errorsAndDebugging.md)
-- JavaScript and the DOM
+- [JavaScript and the DOM](/javaScriptAndTheDom.md)
 - DOM events with JavaScript
 
 - JavaScript Syntax: Classes
 - JavaScript Syntax: Modules
-- JavaScript Syntax: [Error Handling](/errorHandling)
+- JavaScript Syntax: [Error Handling](/errorHandling.md)
 
 - JavaScript Testing
 
