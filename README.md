@@ -25,10 +25,14 @@ Notes on JavaScript fundamentals needed for front-end or back-end development.
   
 - JavaScript Syntax: [Errors and Debugging](/errorsAndDebugging.md)
 - [JavaScript and the DOM](/javaScriptAndTheDom.md)
+  * JavaScript Project:
 - DOM events with JavaScript
 
 - JavaScript Syntax: Classes
+  * JAvaScript Project:
+  * JavaScript Project:
 - JavaScript Syntax: Modules
+  * JavaScript Project:
 - JavaScript Syntax: [Error Handling](/errorHandling.md)
 
 - JavaScript Testing
