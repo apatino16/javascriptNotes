@@ -30,7 +30,7 @@ JavaScript `try catch`
 - Code that may throw an error(s) when executed is written within the try block, and actions for handling these errors are written within the catch block.
 `// The syntax for a try...catch statement:
 
-try {
+`try {
   // try block code
 } catch (e) {
   // catch block code
