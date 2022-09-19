@@ -24,3 +24,32 @@
 ` <script src="example.js" async></script> `
   
 > The convention is to put the `script` tag in the `<head>` element and to use the `defer` and `async` attributes.
+  
+## The Document Object Model
+- The Document Object Model, or DOM is a representation of a document (like an HTML page) as a group of objects. 
+- While it is often used to represent HTML documents, and most web browsers use JavaScript interfaces to the DOM, it is language agnostic as a model.
+- The DOM is tree-like and heirarchical, meaning that there is a single top-level object, and other objects descend from it in a branching structure.
+<img src="https://content.codecademy.com/courses/dom/dom_revision_1.svg" alt="Diagram that uses arrows to depict the flow of information between the DOM, its HTML document, and the JavaScript file that accesses it."/>![image](https://user-images.githubusercontent.com/103137175/190958534-f87f1365-7435-49fc-9454-049a98555f4a.png)
+
+### Nodes in DOM tree
+- A node in the DOM tree is the intersection of two branches containing data. 
+- Nodes can represent HTML elements, text, attributes, etc. 
+- The root node is the top-most node of the tree. 
+<img src="https://content.codecademy.com/practice/art-for-practice/dom-nodes.png" alt="DOM node"/>![image](https://user-images.githubusercontent.com/103137175/190958326-25302e40-0a1f-4fdd-bdf0-e8f690aa04c6.png)
+
+### The DOM Parent-Child Relationship
+- The parent-child relationship observed in the DOM is reflected in the HTML nesting syntax.
+- Elements that are nested inside the opening and closing tag of another element are the children of that element in the DOM.
+- In the code block, the two <p> tags are children of the <body>, and the <body> is the parent of both <p> tags.
+```
+<body>
+  <p>first child</p>
+  <p>second child</p>
+</body>
+```
+ 
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+  
+https://developer.mozilla.org/en-US/docs/Web/API/Document
+
+
