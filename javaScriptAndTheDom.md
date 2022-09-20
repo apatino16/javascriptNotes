@@ -52,4 +52,30 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
   
 https://developer.mozilla.org/en-US/docs/Web/API/Document
 
+## The `element.InnerHTML` Property
+- The `element.innerHTML` property can be used to access the HTML markup that makes up an element’s contents.
+- `element.innerHTML` can be used to access the current value of an element’s contents or to reassign it.
+```
+// Example:
+document.body.innerHTML = '<h2>This is a heading</h2>'; 
+```
+
+## The `.querySelector()` Method
+- The '.querySelector()' method selects the first child/descendant element that matches its selector argument.
+- It can be invoked on the document object to search the entire document or on a single element instance to search that element’s descendants.
+ 
+## The `document.getElementById()` Method
+- The `document.getElementById()` method returns the element that has the id attribute with the specified value.
+- `document.getElementById()` returns null if no elements with the specified ID exists.
+- An ID should be unique within a page. However, if more than one element with the specified ID exists, the `.getElementById()` method returns the first element in the source code.
+  
+## The `document.getElementsByClassName()`
+
+## The `document.getElementsByTagName()`
+  
+
+  
+
+
+
 
