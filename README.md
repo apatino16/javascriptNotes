@@ -28,7 +28,7 @@ Notes on JavaScript fundamentals needed for front-end or back-end development.
   * JavaScript Project:
 - DOM events with JavaScript
 
-- JavaScript Syntax: Classes
+- JavaScript Syntax: [Classes](/classes.md)
   * JAvaScript Project:
   * JavaScript Project:
 - JavaScript Syntax: Modules
