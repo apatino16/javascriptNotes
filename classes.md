@@ -16,3 +16,13 @@ constructor(inputOne, inputTwo) {
   this.inputTwo = inputTwo;
 }
 ```
+
+- Syntax to create an instance of a class:
+
+```
+const instance = new ClassName('arg1', 'arg2');
+
+```
+
+## Class Methods
+Properties in objects are separated using commas. This is not the case when using the class syntax. Methods in classes do not have any separators between them.
