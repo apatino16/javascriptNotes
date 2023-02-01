@@ -31,7 +31,7 @@ Notes on JavaScript fundamentals needed for front-end or back-end development.
 - JavaScript Syntax: [Classes](/classes.md)
   * JAvaScript Project:
   * JavaScript Project:
-- JavaScript Syntax: [Modules](/.modules.md)
+- JavaScript Syntax: [Modules](/modules.md)
   * JavaScript Project:
 - JavaScript Syntax: [Error Handling](/errorHandling.md)
 
