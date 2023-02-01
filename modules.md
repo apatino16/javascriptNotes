@@ -54,3 +54,50 @@ export const variable = (arg) => {
 import { exportedResourceA, exportedResourceB } from '/path/to/module.js';
 
 ```
+
+### Rename imports to avoid naming colissions
+
+Use `as` if two or more imports have the same name and give it a new name. 
+
+```
+import { exportedResource as newlyNamedResource } from '/path/to/module'
+
+```
+
+### Default Exports and Imports
+
+- Often, though not always, the default export value is an object containing the entire set of functions and/or data values of a module.
+
+- The syntax for exporting a default object looks like this:
+
+```
+const resources = { 
+  valueA, 
+  valueB 
+}
+export { resources as default };
+
+```
+
+- shorthand syntax:
+
+```
+const resources = {
+  valueA,
+  valueB
+}
+export default resources;
+
+```
+
+- The syntax for importing default exports looks like this:
+
+```
+import { default as importedResources } from 'module.js 
+```
+
+-shorthand syntax:
+```
+import importedResources from 'module.js';
+
+```
