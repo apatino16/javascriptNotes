@@ -41,7 +41,7 @@ Notes on JavaScript fundamentals needed for front-end or back-end development.
 - Basics of Asynchronous JavaScript
 
 - JavaScript Syntax: [Promises](/promises.md)
-- JavaScript Syntax: Async-Await
+- JavaScript Syntax: [Async-Await](/asyncAwait.md)
 - JavaScript Syntax: Requests
 
 ## Sources
