@@ -35,7 +35,7 @@ const myFirstPromise = new Promise(anExampleExecutor);
 - `setTimeout()` is an asynchronous JavaScript function that executes a code block or evaluates an expression through a callback function after a delay set in milliseconds.
 - setTimeout() has two parameters: a callback function and a delay in milliseconds.
 
-## .then() method of a JavaScript Promise object
+## `.then()` method of a JavaScript Promise object
 - The `.then()` method of a JavaScript Promise object can be used to get the eventual result (or error) of the asynchronous operation.
 - `.then()` is a higher-order function— it takes two callback functions as arguments. We refer to these callbacks as handlers. When the promise settles, the appropriate handler will be invoked with that settled value.
 
@@ -44,4 +44,65 @@ const myFirstPromise = new Promise(anExampleExecutor);
 
 - We can invoke .then() with one, both, or neither handler!
 
+```
+
+returnsPromise().then(myOnFulfilled, myOnRejected);
+
+```
+
+## The `.catch()` method for handling rejection
+
+- The `.catch()` function takes only one argument, onRejected. In the case of a rejected promise, this failure handler will be invoked with the reason for rejection.
+
+```
+
+promise
+  .then((resolvedValue) => {
+    console.log(resolvedValue);
+  })
+  .catch((rejectionReason) => {
+    console.log(rejectionReason);
+  });
+  
+```
+
+### Chaining multiple .then() methods
+
+- The `.then()` method returns a Promise, even if one or both of the handler functions are absent. Because of this, multiple .then() methods can be chained together. This is known as composition.
+- Promises are designed with composition in mind
+
+```
+
+firstPromiseFunction()
+.then((firstResolveVal) => {
+  return secondPromiseFunction(firstResolveVal);
+})
+.then((secondResolveVal) => {
+  console.log(secondResolveVal);
+});
+
+```
+
+### Common Mistakes
+- Nesting promises instead of chaining them.
+- Forgetting to return a promise. NOTE: forgetting to return our promise won’t throw an error
+
+## JavaScript Promise.all()
+- `Promise.all()` accepts an array of promises as its argument and returns a single promise. That single promise will settle in one of two ways:
+
+  - If every promise in the argument array resolves, the single promise returned from `Promise.all()` will resolve with an array containing the resolve value from each promise in the argument array.
+  - If any promise from the argument array rejects, the single promise returned from `Promise.all()` will immediately reject with the reason that promise rejected. This behavior is sometimes referred to as failing fast.
+
+```
+let myPromises = Promise.all([returnsPromOne(), returnsPromTwo(), returnsPromThree()]);
+ 
+myPromises
+  .then((arrayOfValues) => {
+    console.log(arrayOfValues);
+  })
+  .catch((rejectionReason) => {
+    console.log(rejectionReason);
+  });
+  
+```
 
