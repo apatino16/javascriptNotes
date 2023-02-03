@@ -42,7 +42,7 @@ Notes on JavaScript fundamentals needed for front-end or back-end development.
 
 - JavaScript Syntax: [Promises](/promises.md)
 - JavaScript Syntax: [Async-Await](/asyncAwait.md)
-- JavaScript Syntax: Requests
+- JavaScript Syntax: [Requests](/requests.md)
 
 ## Sources
 - Codecademy: Learn JavaScript Course 
