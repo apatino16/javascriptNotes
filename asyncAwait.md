@@ -65,6 +65,47 @@ async function asyncAwaitVersion() {
 
 ```
 
+- Constructing one or more promises or calls without await can allow multiple async functions to execute simultaneously. Through this approach, a program can take advantage of concurrency, and asynchronous actions can be initiated within an async function. Since using the await keyword halts the execution of an async function, each async function can be awaited once its value is required by program logic.
+
 ### Async Function Error Handling
 
 - JavaScript async functions uses `try...catch` statements for error handling. This method allows shared error handling for synchronous and asynchronous code.
+
+```
+async function functionName() {
+  try {
+ 
+  }
+  catch (error) {
+ 
+  }
+}
+ 
+```
+
+```
+async function usingTryCatch() {
+ try {
+   let resolveValue = await asyncFunction('thing that will fail');
+   let secondValue = await secondAsyncFunction(resolveValue);
+ } catch (err) {
+   // Catches any errors in the try block
+   console.log(err);
+ }
+}
+ 
+usingTryCatch();
+
+```
+
+## `Promise.all( )`
+- When using JavaScript async...await, multiple asynchronous operations can run concurrently. If the resolved value is required for each promise initiated, `Promise.all()` can be used to retrieve the resolved value, avoiding unnecessary blocking.
+- `Promise.all()` also has the benefit of failing fast, meaning it won’t wait for the rest of the asynchronous actions to complete once any one has rejected.
+- Use if multiple asynchronous tasks are all required, but none must wait for any other before executing.
+
+```
+async function myFunction() {
+  let myArray = await Promise.all([returnsPromise1(), returnsPromise2(), returnsPromise3() ]);
+}
+
+```
